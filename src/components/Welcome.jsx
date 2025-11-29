@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 
 
 const FONT_WEIGHTS = { 
-    subtitle: {min:100, max:400, defualt:100},
+    subtitle: {min:100, max:400, default:100},
     title: {min:400, max:900, default:400},
 };
 
@@ -17,7 +17,7 @@ const renderText =(text, classname, baseWeight = 400) => {
 };
 
 const setupTextHover = (container, type) => {
-    if(!container) return;
+    if(!container) return () => {};
 
     const letters = container.querySelectorAll("span");
     const {min, max, default: base} = FONT_WEIGHTS[type];
