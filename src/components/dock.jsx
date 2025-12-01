@@ -4,8 +4,10 @@ import gsap from 'gsap';
 import React from 'react'
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react';
+import useWindowStore from "../../store/window.js";
 
 const Dock = () => {
+    const { openWindow, closeWindow, windows} = useWindowStore();
     const dockRef = useRef(null);
 
     useGSAP(() => {
@@ -39,11 +41,7 @@ const Dock = () => {
             animateIcons(e.clientX - left);
         };
 
-        const resetIcons = () => icons.forEach((icon) => gsap.to(icon, { scale: 1, y:0, duration:0.3, ease:"power1.out",
-
-         }),
-
-        );
+        const resetIcons = () => icons.forEach((icon) => gsap.to(icon, { scale: 1, y:0, duration:0.3, ease:"power1.out"}));
 
         dock.addEventListener("mousemove", handleMouseMove);
         dock.addEventListener("mouseleave", resetIcons);
@@ -57,8 +55,21 @@ const Dock = () => {
         
 
     const toggleApp = (app) =>{
-        //TODO : Implement app opening logic
-    }
+        if(!app.canOpen) return;
+
+        const window = windows[app.id];
+
+        if(!window){
+            console.error(`No window configuration found for ${app.id}`);
+            return;
+        }
+
+        if(window.isOpen){
+            closeWindow(app.id);
+        } else{
+            openWindow(app.id);
+        }
+    };
 
   return (
    <section id="dock">
