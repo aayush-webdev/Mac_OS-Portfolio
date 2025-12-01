@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import React from 'react'
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react';
-import useWindowStore from "../../store/window.js";
+import useWindowStore from "../store/window.js";
 
 const Dock = () => {
     const { openWindow, closeWindow, windows} = useWindowStore();
