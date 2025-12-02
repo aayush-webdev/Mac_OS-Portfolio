@@ -1,3 +1,3 @@
-import { Terminal } from "#windows/terminal.jsx";
+import { Terminal } from "#windows/Terminal.jsx";
 
-export  {Terminal};
+export { Terminal };
