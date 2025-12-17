@@ -188,20 +188,44 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/project-1.png",
+    category: "work",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/project-2.png",
+    category: "work",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/project-3.png",
+    category: "work",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/Me.jpg",
+    category: "people",
   },
+  // {
+  //   id: 5,
+  //   img: "/images/blog1.png",
+  //   category: "work",
+  // },
+  // {
+  //   id: 6,
+  //   img: "/images/blog2.png",
+  //   category: "work",
+  // },
+  // {
+  //   id: 7,
+  //   img: "/images/blog3.png",
+  //   category: "work",
+  // },
+  // {
+  //   id: 8,
+  //   img: "/images/wallpaper.png",
+  //   category: "memories",
+  // },
 ];
 
 export {
@@ -295,7 +319,6 @@ const WORK_LOCATION = {
             "A clean and responsive Amazon Homepage Clone built using pure HTML & CSS.",
             "This project focuses on layout design, UI structure, product sections, and responsive styling.",
             "perfect for building strong frontend fundamentals.",
-            
           ],
         },
         {
@@ -316,7 +339,7 @@ const WORK_LOCATION = {
           position: "top-52 left-80",
           imageUrl: "/images/project-2.png",
         },
-       
+
       ],
     },
 
@@ -361,7 +384,7 @@ const WORK_LOCATION = {
           position: "top-52 right-80",
           imageUrl: "/images/project-3.png",
         },
-        
+
       ],
     },
   ],
