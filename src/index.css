@@ -306,6 +306,26 @@ body {
     }
   }
 
+  #trash {
+    @apply absolute w-4xl h-[600px] left-52 top-24 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl;
+
+    .content {
+      @apply flex-1 p-8 bg-white relative;
+
+      li {
+        @apply absolute flex items-center flex-col gap-3;
+
+        img {
+          @apply object-contain object-center size-16 relative group-hover:scale-105;
+        }
+
+        p {
+          @apply text-sm text-center font-medium w-40;
+        }
+      }
+    }
+  }
+
   #finder {
     @apply absolute w-3xl left-40 top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl;
 
