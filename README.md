@@ -52,7 +52,7 @@ Resume Page – Downloadable CV
 Made with passion, clean code, and late-night debugging sessions.
 This project reflects my love for UI, design, and smooth user experience.
 Made with ❤️ by aayush sahrma 
-AKA Odin
+AKA aayushdevs
 
 📬 Contact
 
