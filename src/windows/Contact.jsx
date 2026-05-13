@@ -11,7 +11,7 @@ const ContactComponent = () => {
       </div>
 
       <div className="p-5 space-y-5">
-        <img src="\images\Me.jpg" alt="Aayush Sharma" className="w-20 rounded" />
+        <img src="/images/Me.jpg" alt="Aayush Sharma" className="w-20 rounded" />
 
         <h3>Let's Connect</h3>
         <p>Got an idea? Let’s build something cool together. Or just wanna talk tech?
