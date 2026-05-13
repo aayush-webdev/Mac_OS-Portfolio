@@ -83,20 +83,21 @@ const blogPosts = [
     image: "/images/blog1.png",
     link: "https://weatherayush.netlify.app/",
   },
+ 
   {
-    id: 2,
-    date: "Aug 28, 2025",
-    title: "Amazon clone",
-    image: "/images/blog2.png",
-    link: "https://github.com/aayush-webdev/amazon_clone_using-Html-Css3",
-  },
-  {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "Calculator",
-    image: "/images/blog3.png",
-    link: "https://github.com/aayush-webdev/calculatorV2",
-  },
+  id: 4,
+  date: "Mar 10, 2025",
+  title: "Velvet Pour: Premium Cocktail Bar Brand Website",
+  image: "/images/coctails.png",
+  link: "https://cocktail-aayushdev.netlify.app/",
+},
+{
+  id: 5,
+  date: "Apr 20, 2025",
+  title: "Magic Studio: Premium Digital Agency Landing Page",
+  image: "/images/magic.png",
+  link: "https://magic-aayushdev.netlify.app/",
+},
 ];
 
 const techStack = [
